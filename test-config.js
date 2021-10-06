@@ -15,7 +15,9 @@ exports.config = {
     specs: [
         // './PlayWithMocha.js'
         // './api/click.js'
-        './api/getText.js'
+        // './api/switch.js'
+        // './api/swipeHorizontal.js'
+        './src/test_scripts/account/TC_003_IngeritancePageObject.js'
     ],
     capabilities: [{
         "udid": "f659747e",
