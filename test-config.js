@@ -10,6 +10,7 @@ exports.config = {
         require: ['@babel/register'],
         timeout: 600000
     },
+    waitforTimeout: 10000,
     maxInstances: 1,
     sync: true,
     specs: [
@@ -17,7 +18,7 @@ exports.config = {
         // './api/click.js'
         // './api/switch.js'
         // './api/swipeHorizontal.js'
-        './src/test_scripts/account/TC_003_IngeritancePageObject.js'
+        './src/test_scripts/account/TC_005_Login.js'
     ],
     capabilities: [{
         "udid": "f659747e",

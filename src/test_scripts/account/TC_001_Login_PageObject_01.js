@@ -15,6 +15,8 @@ describe('Account Function', () => {
         LoginPage.password_txt_field.setValue("test")
         LoginPage.login_btn.click()
 
+
+
         browser.pause(2000)
     });
 });
