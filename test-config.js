@@ -1,3 +1,5 @@
+let chai = require("chai")
+
 exports.config = {
     runner: 'local',
     port: 4723,
@@ -18,14 +20,20 @@ exports.config = {
         // './api/click.js'
         // './api/switch.js'
         // './api/swipeHorizontal.js'
-        './src/test_scripts/account/TC_005_Login.js'
+        './src/test_scripts/account/TC_006_Login_WithCommomFlow.js'
     ],
-    capabilities: [{
-        "udid": "f659747e",
-        "platformName": "Android",
-        "platformVersion": "10",
-        "appPackage": "com.wdiodemoapp",
-        "appActivity": "com.wdiodemoapp.SplashActivity",
-        "automationName": "UiAutomator2"
-    }]
+    capabilities: [
+        {
+            "udid": "f659747e",
+            "platformName": "Android",
+            "platformVersion": "10",
+            "appPackage": "com.wdiodemoapp",
+            "appActivity": "com.wdiodemoapp.SplashActivity",
+            "automationName": "UiAutomator2"
+        }
+    ],
+
+    before: function () {
+        global.chaiExpect = chai.expect
+    }
 }
