@@ -12,4 +12,4 @@ class LoginFlow {
         expect(Login.email_txt_field).toHaveText(email)
     }
 }
-export default LoginFlow
+export default new LoginFlow()
