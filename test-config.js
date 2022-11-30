@@ -20,7 +20,7 @@ exports.config = {
         // './api/click.js'
         // './api/switch.js'
         // './api/swipeHorizontal.js'
-        './src/test_scripts/account/TC_006_Login_WithCommomFlow.js'
+        './src/test_scripts/account/TC_001_Login.js'
     ],
     capabilities: [
         {
